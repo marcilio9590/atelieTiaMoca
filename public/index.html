@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <div>
+    <div ng-controller="indexCtrl">
         <div class="wrap-bg">
             <div class="site-header">
                 <div class="logo">
@@ -67,9 +67,9 @@
             </div>
             <div class="mini-menu">
                 <label>
-          <select class="selectnav">
-            <option value="#" selected=""><a ui-sref="home">Início</a></option>
-            <option value="#"><a ui-sref="about">Sobre Nós</a></option>
+          <select ng-change="go(page)" ng-model="page" class="selectnav">
+            <option value="home" selected="">Início</option>
+            <option value="about">Sobre Nós</option>
             <option value="#">Produtos</option>
             <option value="#">Contato</option>
           </select>

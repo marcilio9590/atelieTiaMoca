@@ -14,10 +14,6 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
       url: "/about",
       templateUrl: "views/about.html",
       controller: "aboutCtrl"
-    })
-    .state('state2', {
-      url: "/state2",
-      templateUrl: "partials/state2.html"
     });
 
      $locationProvider.html5Mode(true);
