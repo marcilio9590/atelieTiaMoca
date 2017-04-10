@@ -1,4 +1,4 @@
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
   // 
   // For any unmatched url, redirect to /state1 
   // $urlRouterProvider.otherwise("/home");
@@ -19,4 +19,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
       url: "/state2",
       templateUrl: "partials/state2.html"
     });
+
+     $locationProvider.html5Mode(true);
 });
